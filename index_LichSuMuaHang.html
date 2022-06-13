@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/43d0f537ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index_DanhMuc.css" />
+  </head>
+  <script>
+    id_default = 'box-detail-2_show-img-1';
+
+    function displayBlock(id) {
+      document.getElementById(id_default).style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function displayNone(id) {
+      document.getElementById(id).style.display = 'none';
+      document.getElementById(id_default).style.display = 'block';
+    }
+
+    function diplayClickOn() {
+      document.getElementById(boxdetail).style.display = 'flex';
+    }
+
+    function diplayClickOff() {
+      document.getElementById(boxdetail).style.display = 'none';
+    }
+  </script>
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="hd">
+      <div class="hd__logo">
+        <a href="index.html">
+          <img src="img/logo_giay_sneaker.jpg" alt="Shoes Shop of Group 9" />
+        </a>
+      </div>
+
+      <div class="hd__search">
+        <input
+          type="search"
+          name="Tìm kiếm"
+          placeholder="Tìm kiếm của bạn là..."
+        />
+        <button class="hd__search__btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <ul class="hd__menu-lv1">
+        <li>
+          <h4>
+            <a href="./index.html">
+              <i class="fa-solid fa-house"></i> Trang Chủ</a
+            >
+          </h4>
+        </li>
+        <li>
+          <h4>Sản Phẩm</h4>
+          <ul class="hd__menu-lv2">
+            <li>
+              <p>Giày Nike</p>
+              <ul class="hd__menu-lv3">
+                <li><a href="index_DanhMuc.html">Giày Bóng Rổ Nike</a></li>
+                <li><a href="index_DanhMuc.html">Air Force 1</a></li>
+                <li><a href="index_DanhMuc.html">Air Max</a></li>
+                <li><a href="index_DanhMuc.html">Nike Blazer</a></li>
+                <li><a href="index_DanhMuc.html">Nike SB Dunk</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>Giày Adidas</p>
+              <ul class="hd__menu-lv3">
+                <li><a href="index_DanhMuc.html">Yeezyt</a></li>
+                <li><a href="index_DanhMuc.html">UltraBoost</a></li>
+                <li><a href="index_DanhMuc.html">Stan Smith</a></li>
+                <li><a href="index_DanhMuc.html">Adidas Superstar</a></li>
+                <li><a href="index_DanhMuc.html">Adidas Human Race</a></li>
+                <li><a href="index_DanhMuc.html">Adidas XPLR</a></li>
+                <li><a href="index_DanhMuc.html">Adidas Falcon</a></li>
+                <li><a href="index_DanhMuc.html">Adidas Continental</a></li>
+                <li><a href="index_DanhMuc.html">Giày bóng rổ adidas</a></li>
+                <li><a href="index_DanhMuc.html">Các dòng adidas khác</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>Giày MLB</p>
+              <ul class="hd__menu-lv3">
+                <li><a href="index_DanhMuc.html">MLB Mule</a></li>
+                <li><a href="index_DanhMuc.html">MLB Boston</a></li>
+                <li><a href="index_DanhMuc.html">MLB New York</a></li>
+                <li>
+                  <a href="index_DanhMuc.html">MLB Los Angeles Dodgers</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4><i class="fa-solid fa-user"></i> Tài Khoản</h4>
+          <ul class="hd__menu-lv2">
+            <li>
+              <a href="login.html"><p>Đăng Nhập</p></a>
+              &emsp; &emsp; &emsp;<i class="fa-solid fa-right-to-bracket"></i>
+            </li>
+            <li>
+              <p>Lịch Sử Mua Hàng</p>
+              &emsp; <i class="fa-brands fa-opencart"></i>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>Thông tin Thành Viên Nhóm</h4>
+          <ul class="hd__menu-lv2">
+            <li>
+              <a href="./GioiThieuTus/index.html"><p>Hồ Văn Công Tú</p></a>
+            </li>
+            <li>
+              <a href="./GioiThieuTruong/index.html"><p>Trần Lập Trường</p></a>
+            </li>
+            <li>
+              <a href="./GioiThieuTu/index.html"
+                ><p>Nguyễn Duy Tư (The bLue)</p></a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="link">
+      <h1 style="padding: 12px 25px">
+        <a href="index.html"
+          ><i class="fa-solid fa-house"></i> Trang Chủ</a
+        >&emsp; >> &emsp;<a href="index_LichSuMuaHang.html">Lịch Sử Mua Hàng</a>
+      </h1>
+    </div>
+    <div class="box-detail">
+      <div class="box-detail-1">
+        <img src="img/items_ChiTietSP/1.png" alt="" /><img
+          src="img/items_ChiTietSP/2.png"
+          alt=""
+          onmouseover="displayBlock('box-detail-2_show-img-2')"
+          onmouseleave="displayNone('box-detail-2_show-img-2')"
+        /><img
+          src="img/items_ChiTietSP/3.png"
+          alt=""
+          onmouseover="displayBlock('box-detail-2_show-img-3')"
+          onmouseleave="displayNone('box-detail-2_show-img-3')"
+        />
+      </div>
+      <div class="box-detail-2">
+        <img
+          src="img/items_ChiTietSP/1.png"
+          alt=""
+          id="box-detail-2_show-img-1"
+        /><img
+          src="img/items_ChiTietSP/2.png"
+          alt=""
+          id="box-detail-2_show-img-2"
+        /><img
+          src="img/items_ChiTietSP/3.png"
+          alt=""
+          id="box-detail-2_show-img-3"
+        />
+      </div>
+      <div class="box-detail-3">
+        <h1>NHÀ GIẢ KIM (TÁI BẢN 2020)</h1>
+        <br />
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                Nhà cung cấp:
+                <strong style="color: blue">Nhã Nam</strong>
+              </td>
+              <td>Nhà xuất bản: <strong>NXB Hội Nhà Văn</strong></td>
+            </tr>
+            <tr>
+              <td class="">Tác Giả: <strong class="">Paulo Coelho</strong></td>
+              <td>Hình thức bìa: <strong>Bìa mềm</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          &emsp;
+          <strong>4.9</strong>
+          &emsp;<span>(37 đánh giá)</span>
+        </div>
+        <div>
+          <strong style="color: red; font-size: 2vw">67.150 đ</strong>
+          &nbsp;
+          <del>79.000 đ</del>
+          &nbsp;
+          <span>-15%</span>
+          <br />
+          <p>Chính sách đổi trả</p>
+          <span>Đổi trả sản phẩm trong 30 ngày</span>
+          &emsp;<strong style="color: blue"> xem thêm</strong>
+          <div class="box-detail-3__add">
+            <strong>Số Lượng:</strong>
+            <span>&emsp;-&emsp; 1&emsp; +&emsp;</span>
+          </div>
+        </div>
+      </div>
+      <div class="box-detail-4">
+        <div class="box-detail-4__buy1">
+          <i class="fa-brands fa-opencart"></i>
+          &ensp; Gỡ khỏi giỏ hàng
+        </div>
+        <div class="box-detail-4__buy2">Mua ngay</div>
+      </div>
+    </div>
+    <div class="box-detail" style="margin-top: 50px">
+      <div class="box-detail-1">
+        <img src="img/items_ChiTietSP/1.png" alt="" /><img
+          src="img/items_ChiTietSP/2.png"
+          alt=""
+          onmouseover="displayBlock('box-detail-2_show-img-2')"
+          onmouseleave="displayNone('box-detail-2_show-img-2')"
+        /><img
+          src="img/items_ChiTietSP/3.png"
+          alt=""
+          onmouseover="displayBlock('box-detail-2_show-img-3')"
+          onmouseleave="displayNone('box-detail-2_show-img-3')"
+        />
+      </div>
+      <div class="box-detail-2">
+        <img
+          src="img/items_ChiTietSP/1.png"
+          alt=""
+          id="box-detail-2_show-img-1"
+        /><img
+          src="img/items_ChiTietSP/2.png"
+          alt=""
+          id="box-detail-2_show-img-2"
+        /><img
+          src="img/items_ChiTietSP/3.png"
+          alt=""
+          id="box-detail-2_show-img-3"
+        />
+      </div>
+      <div class="box-detail-3">
+        <h1>NHÀ GIẢ KIM (TÁI BẢN 2020)</h1>
+        <br />
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                Nhà cung cấp:
+                <strong style="color: blue">Nhã Nam</strong>
+              </td>
+              <td>Nhà xuất bản: <strong>NXB Hội Nhà Văn</strong></td>
+            </tr>
+            <tr>
+              <td class="">Tác Giả: <strong class="">Paulo Coelho</strong></td>
+              <td>Hình thức bìa: <strong>Bìa mềm</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          &emsp;
+          <strong>4.9</strong>
+          &emsp;<span>(37 đánh giá)</span>
+        </div>
+        <div>
+          <strong style="color: red; font-size: 2vw">67.150 đ</strong>
+          &nbsp;
+          <del>79.000 đ</del>
+          &nbsp;
+          <span>-15%</span>
+          <br />
+          <p>Chính sách đổi trả</p>
+          <span>Đổi trả sản phẩm trong 30 ngày</span>
+          &emsp;<strong style="color: blue"> xem thêm</strong>
+          <div class="box-detail-3__add">
+            <strong>Số Lượng:</strong>
+            <span>&emsp;-&emsp; 1&emsp; +&emsp;</span>
+          </div>
+        </div>
+      </div>
+      <div class="box-detail-4">
+        <div class="box-detail-4__buy1">
+          <i class="fa-brands fa-opencart"></i>
+          &ensp; Gỡ khỏi giỏ hàng
+        </div>
+        <div class="box-detail-4__buy2">Mua ngay</div>
+      </div>
+    </div>
+    <div class="box-detail" style="margin: 50px auto">
+      <div class="box-detail-1">
+        <img src="img/items_ChiTietSP/1.png" alt="" /><img
+          src="img/items_ChiTietSP/2.png"
+          alt=""
+          onmouseover="displayBlock('box-detail-2_show-img-2')"
+          onmouseleave="displayNone('box-detail-2_show-img-2')"
+        /><img
+          src="img/items_ChiTietSP/3.png"
+          alt=""
+          onmouseover="displayBlock('box-detail-2_show-img-3')"
+          onmouseleave="displayNone('box-detail-2_show-img-3')"
+        />
+      </div>
+      <div class="box-detail-2">
+        <img
+          src="img/items_ChiTietSP/1.png"
+          alt=""
+          id="box-detail-2_show-img-1"
+        /><img
+          src="img/items_ChiTietSP/2.png"
+          alt=""
+          id="box-detail-2_show-img-2"
+        /><img
+          src="img/items_ChiTietSP/3.png"
+          alt=""
+          id="box-detail-2_show-img-3"
+        />
+      </div>
+      <div class="box-detail-3">
+        <h1>NHÀ GIẢ KIM (TÁI BẢN 2020)</h1>
+        <br />
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                Nhà cung cấp:
+                <strong style="color: blue">Nhã Nam</strong>
+              </td>
+              <td>Nhà xuất bản: <strong>NXB Hội Nhà Văn</strong></td>
+            </tr>
+            <tr>
+              <td class="">Tác Giả: <strong class="">Paulo Coelho</strong></td>
+              <td>Hình thức bìa: <strong>Bìa mềm</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          &emsp;
+          <strong>4.9</strong>
+          &emsp;<span>(37 đánh giá)</span>
+        </div>
+        <div>
+          <strong style="color: red; font-size: 2vw">67.150 đ</strong>
+          &nbsp;
+          <del>79.000 đ</del>
+          &nbsp;
+          <span>-15%</span>
+          <br />
+          <p>Chính sách đổi trả</p>
+          <span>Đổi trả sản phẩm trong 30 ngày</span>
+          &emsp;<strong style="color: blue"> xem thêm</strong>
+          <div class="box-detail-3__add">
+            <strong>Số Lượng:</strong>
+            <span>&emsp;-&emsp; 1&emsp; +&emsp;</span>
+          </div>
+        </div>
+      </div>
+      <div class="box-detail-4">
+        <div class="box-detail-4__buy1">
+          <i class="fa-brands fa-opencart"></i>
+          &ensp; Gỡ khỏi giỏ hàng
+        </div>
+        <div class="box-detail-4__buy2">Mua ngay</div>
+      </div>
+    </div>
+    <ul class="page">
+        <li><a class="prev" href="">< Previous</a></li>
+        <li class="page-number active"><a href="#">1</a></li>
+        <li class="page-number"><a href="#">2</a></li>
+        <li class="page-number"><a href="#">3</a></li>
+        <li><a class="next" href="">Next ></a></li>
+      </ul>
+
+
+    <div class="footer">
+      <div class="footer-child">
+        <h2>Thông Tin Của Chúng Tôi</h2>
+        <p>
+          Các bạn có thể tìm hiểu thêm về "TêTê Shop" qua các trang MXH khác
+          nhau như : <br />
+          Facebook, Twitter, Instagram, Youtube.
+        </p>
+        <form>
+          <input
+            required
+            type="text"
+            placeholder="Email address"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+          <button class="btn btn-footer">Send</button>
+        </form>
+      </div>
+      <div class="footer-child">
+        <h2>Fanpage của chúng tôi</h2>
+        <p>doanh nghiệp lùa gà và 1 số cách liên lạc</p>
+        <ul class="footer-child__social-icon">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCuMITT7oXJMM5t0tNMJUrXA"
+              ><i class="fa fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-child">
+        <h2>Thông Tin Liên Hệ Thành Viên Nhóm</h2>
+        <p></p>
+        <ul class="footer-child__hotline">
+          <li><a href="GioiThieuTus/index.html">Hồ Văn Công Tú</a></li>
+          <li><a href="GioiThieuTruong/index.html">Trần Lập Trường</a></li>
+          <li><a href="GioiThieuTu/index.html">Nguyễn Duy Tư (The bLue)</a></li>
+        </ul>
+      </div>
+    </div>
+    <a class="gotop" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+  </body>
+</html>
