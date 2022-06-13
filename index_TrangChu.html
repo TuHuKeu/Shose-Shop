@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ShoesChicken</title>
+    <link rel="stylesheet" href="index_TrangChu.css" />
+    <script
+      src="https://kit.fontawesome.com/43d0f537ec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <script>
+    id_default = 'box-detail-2_show-img-1';
+
+    function displayBlock(id) {
+      document.getElementById(id_default).style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function displayNone(id) {
+      document.getElementById(id).style.display = 'none';
+      document.getElementById(id_default).style.display = 'block';
+    }
+
+    function diplayClickOn() {
+      document.getElementById(boxdetail).style.display = 'flex';
+    }
+
+    function diplayClickOff() {
+      document.getElementById(boxdetail).style.display = 'none';
+    }
+  </script>
+
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="hd">
+      <div class="hd__logo">
+        <a href="index_TrangChu.html">
+          <img src="img/logo_giay_sneaker.jpg" alt="Shoes Shop of Group 9" />
+        </a>
+      </div>
+
+      <div class="hd__search">
+        <input
+          type="search"
+          name="Tìm kiếm"
+          placeholder="Tìm kiếm của bạn là..."
+        />
+        <button class="hd__search__btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <ul class="hd__menu-lv1">
+        <li>
+          <h4>
+            <a href="./index_TrangChu.html">
+              <i class="fa-solid fa-house"></i> Trang Chủ</a
+            >
+          </h4>
+        </li>
+        <li>
+          <h4>Sản Phẩm</h4>
+          <ul class="hd__menu-lv2">
+            <li>
+              <p>Giày Nike</p>
+              <ul class="hd__menu-lv3">
+                <li><a href="index_DanhMuc.html">Giày Bóng Rổ Nike</a></li>
+                <li><a href="index_DanhMuc.html">Air Force 1</a></li>
+                <li><a href="index_DanhMuc.html">Air Max</a></li>
+                <li><a href="index_DanhMuc.html">Nike Blazer</a></li>
+                <li><a href="index_DanhMuc.html">Nike SB Dunk</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>Giày Adidas</p>
+              <ul class="hd__menu-lv3">
+                <li><a href="index_DanhMuc.html">Yeezyt</a></li>
+                <li><a href="index_DanhMuc.html">UltraBoost</a></li>
+                <li><a href="index_DanhMuc.html">Stan Smith</a></li>
+                <li><a href="index_DanhMuc.html">Adidas Superstar</a></li>
+                <li><a href="index_DanhMuc.html">Adidas Human Race</a></li>
+                <li><a href="index_DanhMuc.html">Adidas XPLR</a></li>
+                <li><a href="index_DanhMuc.html">Adidas Falcon</a></li>
+                <li><a href="index_DanhMuc.html">Adidas Continental</a></li>
+                <li><a href="index_DanhMuc.html">Giày bóng rổ adidas</a></li>
+                <li><a href="index_DanhMuc.html">Các dòng adidas khác</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>Giày MLB</p>
+              <ul class="hd__menu-lv3">
+                <li><a href="index_DanhMuc.html">MLB Mule</a></li>
+                <li><a href="index_DanhMuc.html">MLB Boston</a></li>
+                <li><a href="index_DanhMuc.html">MLB New York</a></li>
+                <li>
+                  <a href="index_DanhMuc.html">MLB Los Angeles Dodgers</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4><i class="fa-solid fa-user"></i> Tài Khoản</h4>
+          <ul class="hd__menu-lv2">
+            <li>
+              <a href="login.html"><p>Đăng Nhập</p></a>
+              &emsp; &emsp; &emsp;<i class="fa-solid fa-right-to-bracket"></i>
+            </li>
+            <li>
+              <p>Lịch Sử Mua Hàng</p>
+              &emsp; <i class="fa-brands fa-opencart"></i>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>Thông tin Thành Viên Nhóm</h4>
+          <ul class="hd__menu-lv2">
+            <li>
+              <a href="./GioiThieuTus/index.html"><p>Hồ Văn Công Tú</p></a>
+            </li>
+            <li>
+              <a href="./GioiThieuTruong/index.html"><p>Trần Lập Trường</p></a>
+            </li>
+            <li>
+              <a href="./GioiThieuTu/index.html"
+                ><p>Nguyễn Duy Tư (The bLue)</p></a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="slide">
+      <div class="slide__show">
+        <div class="slide__show-img slide1">
+          <img id="img" src="img/slide/slide1.jpg" alt="slide 1" />
+        </div>
+      </div>
+      <div class="slide__show-navigation">
+        <div data-name="btn" class="slide__show-navigation-bar"></div>
+        <div data-name="btn" class="slide__show-navigation-bar"></div>
+        <div data-name="btn" class="slide__show-navigation-bar"></div>
+        <div data-name="btn" class="slide__show-navigation-bar"></div>
+        <div data-name="btn" class="slide__show-navigation-bar"></div>
+      </div>
+    </div>
+
+    <div class="columns-detail">
+      <div class="columns-detail-items">
+        <div class="columns-detail-items-img">
+          <img src="img/icon_meme/ic1.png" alt="" />
+        </div>
+        <div class="columns-detail-items-title">
+          <h1>Ưu đãi giảm giá lên đến 90% trong hôm nay</h1>
+        </div>
+        <div class="columns-detail-items-detail">
+          <p>
+            Thật nhìu quà tặng cùng mức giảm giá đang được áp dụng ngay hôm nay
+          </p>
+        </div>
+      </div>
+      <div class="columns-detail-items">
+        <div class="columns-detail-items-img">
+          <img src="img/icon_meme/ic2.png" alt="" />
+        </div>
+        <div class="columns-detail-items-title">
+          <h1>DỊCH VỤ KỸ THUẬT VÀ GIAO HÀNG NHANH - FreeShip toàn quốc</h1>
+        </div>
+        <div class="columns-detail-items-detail">
+          <p>
+            Giao Hàng nhanh chóng chỉ từ 2 - 3 ngày. <br />Nhận hàng - Kiểm tra
+            hàng - Thanh Toán. <br />Bảo Hành lên tới 6 tháng
+          </p>
+        </div>
+      </div>
+      <div class="columns-detail-items">
+        <div class="columns-detail-items-img">
+          <img src="img/icon_meme/ic3.png" alt="" />
+        </div>
+        <div class="columns-detail-items-title">
+          <h1>Được chứng nhận của Bộ Công Thương</h1>
+        </div>
+        <div class="columns-detail-items-detail">
+          <p>Tiêu chuẩn bán chạy trong 100 năm</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title-center">
+      <b></b>
+      <span> GỢI Ý CHO BẠN !!! </span>
+      <b></b>
+    </h2>
+    <p class="title-detail">
+      <i>- Những mẫu giày SNEAKER dành cho giới trẻ đang hot hit nhất -</i>
+    </p>
+    <div class="box box1">
+      <div class="box__items">
+        <img src="img/items/items1/blz-1.png" alt="" />
+        <div class="box__items-detail">
+          <h3>100,000 đ</h3>
+          <button class="more-btn">Xem Thêm</button>
+        </div>
+      </div>
+      <div class="box__items">
+        <img src="img/items/items1/Cvs-1.webp" alt="" />
+        <div class="box__items-detail">
+          <h3>100,000 đ</h3>
+          <button class="more-btn">Xem Thêm</button>
+        </div>
+      </div>
+      <div class="box__items">
+        <img src="img/items/items1/Cvs-1b.png" alt="" />
+        <div class="box__items-detail">
+          <h3>100,000 đ</h3>
+          <button class="more-btn">Xem Thêm</button>
+        </div>
+      </div>
+      <div class="box__items">
+        <img src="img/items/items1/Green-1.png" alt="" />
+        <div class="box__items-detail">
+          <h3>100,000 đ</h3>
+          <button class="more-btn">Xem Thêm</button>
+        </div>
+      </div>
+      <div class="box__items">
+        <img src="img/items/items1/JD1-blue.png" alt="" />
+        <div class="box__items-detail">
+          <h3>100,000 đ</h3>
+          <button class="more-btn">Xem Thêm</button>
+        </div>
+      </div>
+      <div class="box__items">
+        <img src="img/items/items1/mlb-1.png" alt="" />
+        <div class="box__items-detail">
+          <h3>100,000 đ</h3>
+          <button class="more-btn">Xem Thêm</button>
+        </div>
+      </div>
+      <div class="box__items">
+        <img src="img/items/items1/Sb_1.png" alt="" />
+        <div class="box__items-detail">
+          <h3>100,000 đ</h3>
+          <button class="more-btn">Xem Thêm</button>
+        </div>
+      </div>
+      <div class="box__items">
+        <img src="img/items/items1/Vans-1.webp" alt="" />
+        <div class="box__items-detail">
+          <h3>100,000 đ</h3>
+          <button class="more-btn">Xem Thêm</button>
+        </div>
+      </div>
+    </div>
+    <h2 class="title-center">
+      <b></b>
+      <span>CHƯƠNG TRÌNH "GIÀY XỊN - GIÁ SOCKK"!!! </span>
+      <b></b>
+    </h2>
+    <p class="title-detail">
+      <i
+        >Giày Xịn Siêu Sale Khủng Tới 50% (Chương trình Áp dụng đến hết ngày
+        17/01/2023)</i
+      >
+    </p>
+
+    <div class="box">
+      <div class="box__ctn">
+        <div class="box__ctn-title">
+          <h3>Giảm giá cực mạnh từ doanh nghiệp lùa gà chúng tôi !!!</h3>
+        </div>
+        <div class="box__ctn-detail">
+          <div class="box__ctn-detail-items">
+            <div class="box__ctn-detail-items-show">
+              <img src="img/items/items2/nike.png" alt="" /><img
+                src="img/items/items2/mlb copy.jpg"
+                alt=""
+              />
+            </div>
+            <span>-99%</span>
+            <div class="box__ctn-detail-items-detail">
+              <h1>Nike Air Max 97 Silver Violet DJ0717-001</h1>
+              <p>2.845.000₫<del>5.690.000₫</del></p>
+            </div>
+          </div>
+          <div class="box__ctn-detail-items">
+            <div class="box__ctn-detail-items-show">
+              <img src="img/items/items2/converse-83130.jpg" alt="" /><img
+                src="img/items/items2/converse copy.png"
+                alt=""
+              />
+            </div>
+            <span>- 89%</span>
+            <div class="box__ctn-detail-items-detail">
+              <h1>Converse Pop Art Unt1tl3d Black 171733C</h1>
+              <p>1.039.500₫<del>1.890.000₫</del></p>
+            </div>
+          </div>
+          <div class="box__ctn-detail-items">
+            <div class="box__ctn-detail-items-show">
+              <img src="img/items/items2/Vans-.jpg" alt="" /><img
+                src="img/items/items2/vans.png"
+                alt=""
+              />
+            </div>
+            <span>- 79%</span>
+            <div class="box__ctn-detail-items-detail">
+              <h1>Converse Pop Art Unt1tl3d Black 171733C</h1>
+              <p>945.000₫<del>1.890.000₫</del></p>
+            </div>
+          </div>
+          <div class="box__ctn-detail-items">
+            <div class="box__ctn-detail-items-show">
+              <img src="img/items/items2/adidas1.jpg" alt="" /><img
+                src="img/items/items2/yz350.png"
+                alt=""
+              />
+            </div>
+            <span>- 69%</span>
+            <div class="box__ctn-detail-items-detail">
+              <h1>Yeezy Boost 350 V2 Dazzling Blue GY7164</h1>
+              <p>8.392.000₫<del>10.490.000₫</del></p>
+            </div>
+          </div>
+          <div class="box__ctn-detail-items">
+            <div class="box__ctn-detail-items-show">
+              <img src="img/items/items2/mlb.jpg" alt="" /><img
+                src="img/items/items2/mlb copy.jpg"
+                alt=""
+              />
+            </div>
+            <span>- 59%</span>
+            <div class="box__ctn-detail-items-detail">
+              <h1>
+                MLB Chunky High Mono Jasquard New York Yankees Blue
+                3ASHU311N-50B
+              </h1>
+              <p>2.467.500₫<del>3.290.000₫</del></p>
+            </div>
+          </div>
+          <div class="box__ctn-detail-items">
+            <div class="box__ctn-detail-items-show">
+              <img src="img/items/items2/jordan-409447.jpg" alt="" /><img
+                src="img/items/items2/JD.png"
+                alt=""
+              />
+            </div>
+            <span>- 49%</span>
+            <div class="box__ctn-detail-items-detail">
+              <h1>Nike Air Jordan 1 Low Marina Blue DC0774-114</h1>
+              <p>3.773.000₫<del>5.390.000₫</del></p>
+            </div>
+          </div>
+        </div>
+        <a href=""><i class="box__ctn-more">xem thêm >>></i></a>
+      </div>
+      <div class="box__news">
+        <div class="box__news-title"><h3>tin tức</h3></div>
+        <div class="box__news-detail">
+          <div class="box__news-detail-items">
+            <div class="box__news-detail-items-show">
+              <a
+                href="https://kenh14.vn/fan-dong-nam-a-u23-viet-nam-rat-manh-se-dai-dien-cho-ca-khu-vuc-20220608224628173.chn"
+                ><img src="img/U23.jpg" alt="" />
+              </a>
+            </div>
+            <div class="box__news-detail-items-detail">
+              <a
+                style="color: #000"
+                href="https://kenh14.vn/fan-dong-nam-a-u23-viet-nam-rat-manh-se-dai-dien-cho-ca-khu-vuc-20220608224628173.chn"
+                ><strong
+                  >Fan Đông Nam Á: "U23 Việt Nam rất mạnh, sẽ đại diện cho cả
+                  khu vực"</strong
+                ></a
+              >
+              &emsp;<span style="color: rgb(187, 184, 184)">09/06/2022</span>
+            </div>
+          </div>
+          <div class="box__news-detail-items">
+            <div class="box__news-detail-items-show">
+              <a
+                href="https://www.24h.com.vn/bat-dong-san/khach-hang-neu-5-ly-do-chon-mua-phan-khu-hot-nhat-du-an-imperia-smart-city-c792a1366815.html"
+                ><img src="img/MiraePark.jpg" alt=""
+              /></a>
+            </div>
+            <div class="box__news-detail-items-detail">
+              <a
+                style="color: #000"
+                href="https://www.24h.com.vn/bat-dong-san/khach-hang-neu-5-ly-do-chon-mua-phan-khu-hot-nhat-du-an-imperia-smart-city-c792a1366815.html"
+                ><strong
+                  >Khách hàng nêu 5 lý do chọn mua phân khu hot nhất dự án
+                  Imperia Smart City</strong
+                ></a
+              >
+              &emsp;<span style="color: rgb(187, 184, 184)">09/06/2022</span>
+            </div>
+          </div>
+        </div>
+        <a href=""><i class="box__ctn-more">xem thêm >>></i></a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-child">
+        <h2>Thông Tin Của Chúng Tôi</h2>
+        <p>
+          Các bạn có thể tìm hiểu thêm về "TêTê Shop" qua các trang MXH khác
+          nhau như : <br />
+          Facebook, Twitter, Instagram, Youtube.
+        </p>
+        <form>
+          <input
+            required
+            type="text"
+            placeholder="Email address"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+          <button class="btn btn-footer">Send</button>
+        </form>
+      </div>
+      <div class="footer-child">
+        <h2>Fanpage của chúng tôi</h2>
+        <p>doanh nghiệp lùa gà và 1 số cách liên lạc</p>
+        <ul class="footer-child__social-icon">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCuMITT7oXJMM5t0tNMJUrXA"
+              ><i class="fa fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-child">
+        <h2>Thông Tin Liên Hệ Thành Viên Nhóm</h2>
+        <p></p>
+        <ul class="footer-child__hotline">
+          <li><a href="GioiThieuTus/index.html">Hồ Văn Công Tú</a></li>
+          <li><a href="GioiThieuTruong/index.html">Trần Lập Trường</a></li>
+          <li><a href="GioiThieuTu/index.html">Nguyễn Duy Tư (The bLue)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main id="boxdetail" class="hidden">
+      <div class="title">
+        <h3>
+          <a href="index_TrangChu.html">Trang Chủ</a> &emsp; > &emsp;
+          <a href="index_DanhMuc.html">Giày Nike</a> &emsp; > &emsp;
+          <a href="index_DanhMuc.html">Giày Bóng Rổ Nike</a>
+        </h3>
+      </div>
+      <div class="box-detail">
+        <button class="close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="box-detail-1">
+          <img src="img/items_ChiTietSP/1.png" alt="" /><img
+            src="img/items_ChiTietSP/2.png"
+            alt=""
+            onmouseover="displayBlock('box-detail-2_show-img-2')"
+            onmouseleave="displayNone('box-detail-2_show-img-2')"
+          /><img
+            src="img/items_ChiTietSP/3.png"
+            alt=""
+            onmouseover="displayBlock('box-detail-2_show-img-3')"
+            onmouseleave="displayNone('box-detail-2_show-img-3')"
+          />
+        </div>
+        <div class="box-detail-2">
+          <img
+            src="img/items_ChiTietSP/1.png"
+            alt=""
+            id="box-detail-2_show-img-1"
+          /><img
+            src="img/items_ChiTietSP/2.png"
+            alt=""
+            id="box-detail-2_show-img-2"
+          /><img
+            src="img/items_ChiTietSP/3.png"
+            alt=""
+            id="box-detail-2_show-img-3"
+          />
+        </div>
+        <div class="box-detail-3">
+          <h1>NHÀ GIẢ KIM (TÁI BẢN 2020)</h1>
+          <br />
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  Nhà cung cấp:
+                  <strong style="color: blue">Nhã Nam</strong>
+                </td>
+                <td>Nhà xuất bản: <strong>NXB Hội Nhà Văn</strong></td>
+              </tr>
+              <tr>
+                <td class="">
+                  Tác Giả: <strong class="">Paulo Coelho</strong>
+                </td>
+                <td>Hình thức bìa: <strong>Bìa mềm</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            &emsp;
+            <strong>4.9</strong>
+            &emsp;<span>(37 đánh giá)</span>
+          </div>
+          <div>
+            <strong style="color: red; font-size: 2vw">67.150 đ</strong>
+            &nbsp;
+            <del>79.000 đ</del>
+            &nbsp;
+            <span>-15%</span>
+            <br />
+            <p>Chính sách đổi trả</p>
+            <span>Đổi trả sản phẩm trong 30 ngày</span>
+            &emsp;<strong style="color: blue"> xem thêm</strong>
+            <div class="box-detail-3__add">
+              <strong>Số Lượng:</strong>
+              <span>&emsp;-&emsp; 1&emsp; +&emsp;</span>
+            </div>
+          </div>
+        </div>
+        <div class="box-detail-4">
+          <div class="box-detail-4__buy1">
+            <i class="fa-brands fa-opencart"></i>
+            &ensp; Thêm vào giỏ hàng
+          </div>
+          <div class="box-detail-4__buy2">Mua ngay</div>
+        </div>
+      </div>
+    </main>
+    <a class="gotop" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
